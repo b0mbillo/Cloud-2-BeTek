@@ -1,0 +1,1 @@
+La estimación considera servicios de almacenamiento en la región Este de EE. UU. (N. Virginia), incluyendo EBS, EFS y S3. El costo mensual estimado es de 78,86 USD sin costo inicial. El gasto anual aproximado asciende a 946,32 USD. La mayor parte del costo proviene de Amazon EFS, lo que indica que el componente principal es almacenamiento compartido administrado.
