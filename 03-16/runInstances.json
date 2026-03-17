@@ -1,0 +1,69 @@
+{
+    "eventVersion": "1.11",
+    "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAZQ3DSS4VGZ3E5IND5",
+        "arn": "arn:aws:iam::654654478122:user/students/baldo542@gmail.com",
+        "accountId": "654654478122",
+        "accessKeyId": "ASIAZQ3DSS4VFCROM32B",
+        "userName": "baldo542@gmail.com",
+        "sessionContext": {
+            "attributes": {
+                "creationDate": "2026-03-17T00:49:05Z",
+                "mfaAuthenticated": "false"
+            }
+        }
+    },
+    "eventTime": "2026-03-17T00:57:53Z",
+    "eventSource": "ec2.amazonaws.com",
+    "eventName": "RunInstances",
+    "awsRegion": "us-east-1",
+    "sourceIPAddress": "98.98.26.114",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:148.0) Gecko/20100101 Firefox/148.0",
+    "errorCode": "Client.UnauthorizedOperation",
+    "errorMessage": "You are not authorized to perform this operation. User: arn:aws:iam::654654478122:user/students/baldo542@gmail.com is not authorized to perform: ec2:CreateTags on resource: arn:aws:ec2:us-east-1:654654478122:instance/* because no identity-based policy allows the ec2:CreateTags action. Encoded authorization failure message: xPDyvafQYQ3RFIXA738TdpH4-FTzJ-b5nWAFMgHu40xdq4BeOmwGJmWH-XJMsFgddHIA_8wGWq0z1F5wWqha7k3C-v4_lpMY4fUCc_nmnQ6jW1GWety-DAj02PYn6yQQ_uykJ8-bPhFaQWfcAwuHVvKJsa-SaJQ_yOaaOYo6Thb9ev4mbIkWCVk4md452_iwt-pfMFd8dc5NnW3nNdYdDAlTtx1cUoW5C14IV7c6qOnLXS3vOjKuDQ2IE8DCbaZpyJygyxI4Mw0CTMGpyRI9cZfRe8AkafJ9svrtcZQ5bSDrGtOaEuzSWwuh1pRBx2YE1U1pF2sMYNuhf4Nr-l4aFPu6dJw6EaEEbbishFJ7xka_cih0QvDzsRyy_yPkL6OIwNIvQ3KSp9CZhCMJeY_zpeuqrXKzjteFCan_OjSbvBlyaxVBBGii0P0xDzVgs2cQ3U0wIeUys_tG6RrDju1WDCjQx7EnIJIA7t2Mk8kEE0FzF0IV-0B6-4XkhIYfwq5dVue2BteNkgr-rP94o5oit6M_fYgBpLQh61dKIyVH8RJhFNPLU922PC_G_kGef9knuHuPheBk-gmNYp_j44OyRvPmGaO75IG2CLCQsSB5GzEQqkJmFjXXCaR1Am3RL2W4hPVoYhuCNNIWY0C1ZjDIiUSP0lQM3jTW3iYz811mmxSQI69UHG4xIa6K...",
+    "requestParameters": {
+        "instancesSet": {
+            "items": [
+                {
+                    "minCount": 1,
+                    "maxCount": 1
+                }
+            ]
+        },
+        "instanceType": "t2.micro",
+        "blockDeviceMapping": {},
+        "monitoring": {
+            "enabled": false
+        },
+        "disableApiTermination": false,
+        "disableApiStop": false,
+        "clientToken": "fa7afc28-131f-4364-bcb4-023f1095e8ca",
+        "networkInterfaceSet": {
+            "items": [
+                {
+                    "deviceIndex": 0,
+                    "subnetId": "subnet-00227b47a5f26ec04"
+                }
+            ]
+        },
+        "launchTemplate": {
+            "launchTemplateId": "lt-076b6641e996c59c5",
+            "version": "1"
+        }
+    },
+    "responseElements": null,
+    "requestID": "4cac645a-d53d-42c5-8b51-445de4f62be1",
+    "eventID": "9bf5bd58-f43e-4d90-8336-7c5a5921ae37",
+    "readOnly": false,
+    "eventType": "AwsApiCall",
+    "managementEvent": true,
+    "recipientAccountId": "654654478122",
+    "eventCategory": "Management",
+    "tlsDetails": {
+        "tlsVersion": "TLSv1.3",
+        "cipherSuite": "TLS_AES_128_GCM_SHA256",
+        "clientProvidedHostHeader": "ec2.us-east-1.amazonaws.com"
+    },
+    "sessionCredentialFromConsole": "true"
+}
