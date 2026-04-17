@@ -2,9 +2,9 @@ name: Deploy Infra + App # define el nombre del flujo
 
 on: # aca damos inicio al evento que dispara el flujo
   push:
-    workflow_dispatch: # Permite ejecutar el flujo manualmente desde la interfaz de Github Actions
-    branches:
-        [main]
+    branches: [main]
+
+  workflow_dispatch: # Permite ejecutar el flujo manualmente desde la interfaz de Github Actions
 
 jobs: # contenedor de todas las tareas
   deploy: # nombre del trabajo especifico
