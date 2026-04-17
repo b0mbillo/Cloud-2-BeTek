@@ -4,7 +4,7 @@ provider "aws" {
 
 terraform {
     backend "s3" {
-    bucket = "bucket-brandoMontoyastate-terraform" # Debes crearlo manualmente una vez
+    bucket = "bucket-brandomontoyastate-terraform" # Debes crearlo manualmente una vez
     key = "github-actions-demo/terraform.tfstate" # Ruta dentro del bucket
     region = "us-east-1"
     encrypt = true
