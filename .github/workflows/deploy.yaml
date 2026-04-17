@@ -4,6 +4,8 @@ on: # aca damos inicio al evento que dispara el flujo
   push:
     branches: [main]
 
+  workflow_dispatch: # Permite ejecutar el flujo manualmente desde la interfaz de Github Actions
+
 jobs: # contenedor de todas las tareas
   deploy: # nombre del trabajo especifico
     runs-on: ubuntu-latest # especifica la version de ubuntu que ejecutara la maquina
