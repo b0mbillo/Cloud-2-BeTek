@@ -1,14 +1,9 @@
 name: Deploy Infra + App # define el nombre del flujo
 
 on: # aca damos inicio al evento que dispara el flujo
-  workflow_dispatch:
-    inputs:
-      yes:
-        description: 'Type "yes" to confirm deployment'
-        required: true
-        default: 'no'
   push:
     branches: [main]
+  workflow_dispatch:
 
 jobs: # contenedor de todas las tareas
   deploy: # nombre del trabajo especifico
@@ -54,9 +49,9 @@ jobs: # contenedor de todas las tareas
         working-directory: github-actions-lab/infra/
 
       # 7. Subir app a S3
-      - name: Deploy to S3
-        run: aws s3 sync app/ s3://${{ steps.tf_output.outputs.bucket }} --delete
-        working-directory: github-actions-lab/
+      #- name: Deploy to S3
+      #  run: aws s3 sync app/ s3://${{ steps.tf_output.outputs.bucket }} --delete
+      #  working-directory: github-actions-lab/
 
       # 8. Mostrar URL
       - name: Show Website URL
