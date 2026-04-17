@@ -12,7 +12,7 @@ terraform {
 }
 
 resource "aws_s3_bucket" "web" {
-    bucket = "bucket-brandoMontoya-terraform" #nombre del bucket que crearas
+    bucket = "bucket-brandomontoya-terraform" #nombre del bucket que crearas
 }
 
 resource "aws_s3_bucket_website_configuration" "web_config" {
