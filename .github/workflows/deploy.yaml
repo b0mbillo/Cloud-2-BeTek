@@ -35,8 +35,8 @@ jobs: # contenedor de todas las tareas
         working-directory: github-actions-lab/infra/
 
       # 5. Crear infraestructura
-      - name: Terraform Apply
-        run: terraform apply -auto-approve
+      - name: Terraform Destroy
+        run: terraform destroy -auto-approve
         working-directory: github-actions-lab/infra/
 
       # 6. Obtener nombre del bucket
