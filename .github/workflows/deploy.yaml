@@ -2,6 +2,8 @@ name: Deploy Infra + App # define el nombre del flujo
 
 on: # aca damos inicio al evento que dispara el flujo
   workflow_dispatch:
+    inputs:
+      yes:
   push:
     branches: [main]
 
@@ -34,8 +36,8 @@ jobs: # contenedor de todas las tareas
         working-directory: github-actions-lab/infra/
 
       # 5. Crear infraestructura
-      - name: Terraform Destroy
-        run: terraform destroy -auto-approve
+      - name: Terraform Plan
+        run: terraform plan
         working-directory: github-actions-lab/infra/
 
       # 6. Obtener nombre del bucket
